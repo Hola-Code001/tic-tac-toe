@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:wght@300;400;600&display=swap");
+
+/* font-family: 'Permanent Marker', cursive;
+font-family: 'Raleway', sans-serif; */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  background-color: #0f172a;
+  color: #fff;
+}
+
+main {
+  padding: 2rem 0;
+  min-height: 100%;
+  text-align: center;
+}
+
+.game-container {
+  margin: 2.5rem auto;
+  width: 80%;
+  max-width: 300px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.score p span {
+  font-size: 1.2rem;
+  margin-left: 0.2rem;
+  background-color: #ca8a04;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.3rem;
+}
+
+.score p:last-child span {
+  background-color: #15803d;
+}
+
+.box {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 30%);
+  place-content: center;
+}
+
+.cell {
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Permanent Marker", cursive;
+  border-radius: 0.4rem;
+  font-size: 3.5rem;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.restart-btn,
+.reset-btn {
+  all: unset;
+  padding: 0.45rem 1.2rem;
+  font-size: 15px;
+  border-radius: 0.3rem;
+  margin: 0.8rem auto;
+  cursor: pointer;
+  transition: 0.35s;
+  margin: 1rem 0.5rem;
+}
+
+.reset-btn {
+  background-color: #15803d;
+  border: solid 1px #15803d;
+}
+
+.restart-btn {
+  background-color: #ca8a04;
+  border: solid 1px #ca8a04;
+}
+
+.restart-btn:hover,
+.reset-btn:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+}
+
+.cell:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
